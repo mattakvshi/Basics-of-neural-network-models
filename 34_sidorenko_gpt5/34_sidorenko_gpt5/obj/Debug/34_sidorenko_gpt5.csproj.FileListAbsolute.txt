@@ -1,0 +1,11 @@
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.exe.config
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.exe
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.pdb
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.AssemblyReference.cache
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.SuggestedBindingRedirects.cache
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\_34_sidorenko_gpt5.Properties.Resources.resources
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.GenerateResource.cache
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.CoreCompileInputs.cache
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.exe
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.pdb
+Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\_34_sidorenko_gpt5.MainForm.resources
