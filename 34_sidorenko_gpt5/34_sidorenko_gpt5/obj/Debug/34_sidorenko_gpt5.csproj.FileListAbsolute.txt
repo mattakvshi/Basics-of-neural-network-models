@@ -9,3 +9,13 @@ Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.c
 Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.exe
 Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.pdb
 Z:\MyFirstGPT5\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\_34_sidorenko_gpt5.MainForm.resources
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.AssemblyReference.cache
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\_34_sidorenko_gpt5.MainForm.resources
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\_34_sidorenko_gpt5.Properties.Resources.resources
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.GenerateResource.cache
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.csproj.CoreCompileInputs.cache
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.exe
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\obj\Debug\34_sidorenko_gpt5.pdb
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.exe.config
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.exe
+D:\КУБИК\3 курс 5  семак\Неронные сети\Basics-of-neural-network-models\34_sidorenko_gpt5\34_sidorenko_gpt5\bin\Debug\34_sidorenko_gpt5.pdb
