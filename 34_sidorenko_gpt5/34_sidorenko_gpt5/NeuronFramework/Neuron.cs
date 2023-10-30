@@ -1,4 +1,5 @@
-﻿using static System.Math;
+﻿using System;
+using static System.Math;
 
 namespace _34_sidorenko_gpt5.NeuronFramework
 {
@@ -26,12 +27,14 @@ namespace _34_sidorenko_gpt5.NeuronFramework
 
         private double HiperbolicTg(double arg)
         {
-            return 0;
+            return ((Math.Pow(Math.E, arg)) - (Math.Pow(Math.E, -arg))) / ((Math.Pow(Math.E, arg)) + (Math.Pow(Math.E, -arg)));
         }
 
         private double HeperbolicTgDerevator(double arg)
         {
-            return 0;
+            double ep = Math.Exp(arg);
+            double en = Math.Exp(-arg);
+            return (-ep + en) * (ep - en) / (ep + en) / (ep + en) + 1;
         }
 
         public void Activator(double[] inpt, double[] wght)
