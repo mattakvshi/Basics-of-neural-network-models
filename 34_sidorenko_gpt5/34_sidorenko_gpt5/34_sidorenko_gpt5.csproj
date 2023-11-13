@@ -52,9 +52,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NeuronFramework\HiddenLayer.cs" />
+    <Compile Include="NeuronFramework\InputLayer.cs" />
     <Compile Include="NeuronFramework\Layer.cs" />
     <Compile Include="NeuronFramework\EnumNetWork.cs" />
     <Compile Include="NeuronFramework\Neuron.cs" />
+    <Compile Include="NeuronFramework\OutputLayer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">

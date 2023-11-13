@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace _34_sidorenko_gpt5.NeuronFramework
 {
-    enum MemoryMode
+    enum MemoryMode // режимы работы памяти
     {
         GET,
         SET,
         INIT
     }
-    enum TypeNeuron { Hidden, Output }
+    enum TypeNeuron // тип нейрона
+    { 
+        Hidden, 
+        Output 
+    } 
 
-    enum NetworkMode 
+    enum NetworkMode  // режимы работы нейросети
     {
-    
+        Train,
+        Test,
+        Demo
     }
 }

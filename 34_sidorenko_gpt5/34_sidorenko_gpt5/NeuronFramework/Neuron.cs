@@ -25,12 +25,12 @@ namespace _34_sidorenko_gpt5.NeuronFramework
             this.weights = w;
         }
 
-        private double HiperbolicTg(double arg)
+        private double HiperbolicTg(double arg) // функция активации (гиперболический тангенс)
         {
             return ((Math.Pow(Math.E, arg)) - (Math.Pow(Math.E, -arg))) / ((Math.Pow(Math.E, arg)) + (Math.Pow(Math.E, -arg)));
         }
 
-        private double HeperbolicTgDerevator(double arg)
+        private double HeperbolicTgDerevator(double arg)  // вычисление производной
         {
             double ep = Math.Exp(arg);
             double en = Math.Exp(-arg);
