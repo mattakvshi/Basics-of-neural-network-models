@@ -46,6 +46,7 @@
             this.LerningButton = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.TestButton = new System.Windows.Forms.Button();
+            this.IdentifideButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,17 +249,18 @@
             // LerningButton
             // 
             this.LerningButton.CausesValidation = false;
-            this.LerningButton.Location = new System.Drawing.Point(361, 460);
+            this.LerningButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.LerningButton.Location = new System.Drawing.Point(691, 168);
             this.LerningButton.Name = "LerningButton";
             this.LerningButton.Size = new System.Drawing.Size(232, 35);
             this.LerningButton.TabIndex = 15;
-            this.LerningButton.Text = "Lerning";
+            this.LerningButton.Text = "Save lerning stack ";
             this.LerningButton.UseVisualStyleBackColor = true;
             this.LerningButton.Click += new System.EventHandler(this.LerningButton_Click);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(361, 44);
+            this.numericUpDown1.Location = new System.Drawing.Point(691, 130);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             9,
             0,
@@ -272,13 +274,26 @@
             // TestButton
             // 
             this.TestButton.CausesValidation = false;
-            this.TestButton.Location = new System.Drawing.Point(361, 501);
+            this.TestButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.TestButton.Location = new System.Drawing.Point(691, 222);
             this.TestButton.Name = "TestButton";
             this.TestButton.Size = new System.Drawing.Size(232, 32);
             this.TestButton.TabIndex = 17;
-            this.TestButton.Text = "Test";
+            this.TestButton.Text = "Seve testing stack";
             this.TestButton.UseVisualStyleBackColor = true;
             this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
+            // 
+            // IdentifideButton
+            // 
+            this.IdentifideButton.CausesValidation = false;
+            this.IdentifideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.IdentifideButton.Location = new System.Drawing.Point(379, 460);
+            this.IdentifideButton.Name = "IdentifideButton";
+            this.IdentifideButton.Size = new System.Drawing.Size(190, 53);
+            this.IdentifideButton.TabIndex = 18;
+            this.IdentifideButton.Text = "Identifide";
+            this.IdentifideButton.UseVisualStyleBackColor = true;
+            this.IdentifideButton.Click += new System.EventHandler(this.IdentifideButton_Click);
             // 
             // MainForm
             // 
@@ -286,6 +301,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.IdentifideButton);
             this.Controls.Add(this.TestButton);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.LerningButton);
@@ -331,6 +347,7 @@
         private System.Windows.Forms.Button LerningButton;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button TestButton;
+        private System.Windows.Forms.Button IdentifideButton;
     }
 }
 

@@ -145,6 +145,9 @@ namespace _34_sidorenko_gpt5
             File.AppendAllText("Test.txt", output + Environment.NewLine);
         }
 
+        private void IdentifideButton_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

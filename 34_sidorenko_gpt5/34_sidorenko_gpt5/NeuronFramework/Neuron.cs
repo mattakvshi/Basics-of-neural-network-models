@@ -1,69 +1,60 @@
 ﻿using System;
 using static System.Math;
 
-namespace _34_sidorenko_gpt5.NeuronFramework
+namespace WindowsFormsApp1.src
 {
     class Neuron
     {
-        //поля
+
+        //поляч
         private TypeNeuron typeNeuron;
-        private double[] inputs; //Входные данные
-        private double[] weights; //Синаптические веса нейрона
-        private double output; //Выходной сигнал нейрона
-        private double derevative; //Производная
+        private double[] inputs;
+        private double output;
+        private double[] weights;
+        private double derevative;
 
         //свойства
+
         public double[] Inputs { get => inputs; set => inputs = value; }
         public double[] Weights { get => weights; set => weights = value; }
         public double Output { get => output; }
         public double Derevative { get => derevative; }
 
-        //конструктор 
+
+        //constructor
+
         public Neuron(double[] w, TypeNeuron t)
         {
             this.typeNeuron = t;
             this.weights = w;
         }
 
-        private double HiperbolicTg(double arg) // функция активации (гиперболический тангенс)
+        private double Lya_Kirily (double arg)
         {
-            return ((Math.Pow(Math.E, arg)) - (Math.Pow(Math.E, -arg))) / ((Math.Pow(Math.E, arg)) + (Math.Pow(Math.E, -arg)));
+            return Math.Max(0.01 * arg, arg);
         }
-
-        private double HeperbolicTgDerevator(double arg)  // вычисление производной
+        private double Lya_Kirily_derevator(double arg)
         {
-            double ep = Math.Exp(arg);
-            double en = Math.Exp(-arg);
-            return (-ep + en) * (ep - en) / (ep + en) / (ep + en) + 1;
+            if (arg > 0)
+            return 1;
+            else return 0.01;
         }
 
         public void Activator(double[] inpt, double[] wght)
         {
             double sum = wght[0];
-            for (int i = 0; i < inpt.Length; i++)
-            {
+            for (int i = 0; i < inpt.Length; i++) { 
                 sum += inpt[i] * wght[i + 1];
             }
 
-            switch (typeNeuron)
-            {
-                case TypeNeuron.Hidden:
-                    output = HiperbolicTg(sum); 
-                    derevative = HeperbolicTgDerevator(sum);
-                    break;
 
-                case TypeNeuron.Output:
-                    output = Exp(sum);
-                    break;
-            }
+            switch(typeNeuron) {
+                case TypeNeuron.Hidden:output = Lya_Kirily(sum); derevative = Lya_Kirily_derevator(sum); break;
+                case TypeNeuron.Output:output = Exp(sum); break;
+            }  
         }
 
-
-
-
-
-
-
+        
 
     }
 }

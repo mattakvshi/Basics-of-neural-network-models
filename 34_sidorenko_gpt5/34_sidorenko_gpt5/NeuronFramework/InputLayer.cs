@@ -1,12 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace _34_sidorenko_gpt5.NeuronFramework
+namespace WindowsFormsApp1.src
 {
-    internal class InputLayer
+    class InputLayer
     {
+        private Random random = new Random();
+
+        //Поля
+        private (double[], int)[] trainSet = new (double[], int)[100];
+
+        public (double[], int)[] TrainSet { get { return trainSet; } }
+
+        public InputLayer(NetworkMode nm)
+        {
+
+        }
     }
 }
