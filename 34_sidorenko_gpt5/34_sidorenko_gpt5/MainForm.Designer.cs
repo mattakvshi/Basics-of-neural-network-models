@@ -43,10 +43,13 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
-            this.LerningButton = new System.Windows.Forms.Button();
+            this.saveTrainDataBtn = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.TestButton = new System.Windows.Forms.Button();
-            this.IdentifideButton = new System.Windows.Forms.Button();
+            this.saveTestDataBtn = new System.Windows.Forms.Button();
+            this.recBtn = new System.Windows.Forms.Button();
+            this.trainBtn = new System.Windows.Forms.Button();
+            this.testBtn = new System.Windows.Forms.Button();
+            this.labelOutput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -246,17 +249,17 @@
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
-            // LerningButton
+            // saveTrainDataBtn
             // 
-            this.LerningButton.CausesValidation = false;
-            this.LerningButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LerningButton.Location = new System.Drawing.Point(691, 168);
-            this.LerningButton.Name = "LerningButton";
-            this.LerningButton.Size = new System.Drawing.Size(232, 35);
-            this.LerningButton.TabIndex = 15;
-            this.LerningButton.Text = "Save lerning stack ";
-            this.LerningButton.UseVisualStyleBackColor = true;
-            this.LerningButton.Click += new System.EventHandler(this.LerningButton_Click);
+            this.saveTrainDataBtn.CausesValidation = false;
+            this.saveTrainDataBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.saveTrainDataBtn.Location = new System.Drawing.Point(691, 168);
+            this.saveTrainDataBtn.Name = "saveTrainDataBtn";
+            this.saveTrainDataBtn.Size = new System.Drawing.Size(232, 48);
+            this.saveTrainDataBtn.TabIndex = 15;
+            this.saveTrainDataBtn.Text = "Сохранить данные для обучения";
+            this.saveTrainDataBtn.UseVisualStyleBackColor = true;
+            this.saveTrainDataBtn.Click += new System.EventHandler(this.saveTrainDataBtn_Click);
             // 
             // numericUpDown1
             // 
@@ -271,29 +274,64 @@
             this.numericUpDown1.TabIndex = 16;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
-            // TestButton
+            // saveTestDataBtn
             // 
-            this.TestButton.CausesValidation = false;
-            this.TestButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.TestButton.Location = new System.Drawing.Point(691, 222);
-            this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(232, 32);
-            this.TestButton.TabIndex = 17;
-            this.TestButton.Text = "Seve testing stack";
-            this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
+            this.saveTestDataBtn.CausesValidation = false;
+            this.saveTestDataBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.saveTestDataBtn.Location = new System.Drawing.Point(691, 247);
+            this.saveTestDataBtn.Name = "saveTestDataBtn";
+            this.saveTestDataBtn.Size = new System.Drawing.Size(232, 55);
+            this.saveTestDataBtn.TabIndex = 17;
+            this.saveTestDataBtn.Text = "Сохранить данные для тестирования";
+            this.saveTestDataBtn.UseVisualStyleBackColor = true;
+            this.saveTestDataBtn.Click += new System.EventHandler(this.saveTestDataBtn_Click);
             // 
-            // IdentifideButton
+            // recBtn
             // 
-            this.IdentifideButton.CausesValidation = false;
-            this.IdentifideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.IdentifideButton.Location = new System.Drawing.Point(379, 460);
-            this.IdentifideButton.Name = "IdentifideButton";
-            this.IdentifideButton.Size = new System.Drawing.Size(190, 53);
-            this.IdentifideButton.TabIndex = 18;
-            this.IdentifideButton.Text = "Identifide";
-            this.IdentifideButton.UseVisualStyleBackColor = true;
-            this.IdentifideButton.Click += new System.EventHandler(this.IdentifideButton_Click);
+            this.recBtn.CausesValidation = false;
+            this.recBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.recBtn.Location = new System.Drawing.Point(379, 478);
+            this.recBtn.Name = "recBtn";
+            this.recBtn.Size = new System.Drawing.Size(190, 53);
+            this.recBtn.TabIndex = 18;
+            this.recBtn.Text = "Распознать";
+            this.recBtn.UseVisualStyleBackColor = true;
+            this.recBtn.Click += new System.EventHandler(this.recBtn_Click);
+            // 
+            // trainBtn
+            // 
+            this.trainBtn.CausesValidation = false;
+            this.trainBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.trainBtn.Location = new System.Drawing.Point(691, 334);
+            this.trainBtn.Name = "trainBtn";
+            this.trainBtn.Size = new System.Drawing.Size(232, 35);
+            this.trainBtn.TabIndex = 19;
+            this.trainBtn.Text = "Обучить";
+            this.trainBtn.UseVisualStyleBackColor = true;
+            this.trainBtn.Click += new System.EventHandler(this.trainBtn_Click);
+            // 
+            // testBtn
+            // 
+            this.testBtn.CausesValidation = false;
+            this.testBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.testBtn.Location = new System.Drawing.Point(691, 396);
+            this.testBtn.Name = "testBtn";
+            this.testBtn.Size = new System.Drawing.Size(232, 35);
+            this.testBtn.TabIndex = 20;
+            this.testBtn.Text = "Тестировать";
+            this.testBtn.UseVisualStyleBackColor = true;
+            this.testBtn.Click += new System.EventHandler(this.testBtn_Click);
+            // 
+            // labelOutput
+            // 
+            this.labelOutput.AutoSize = true;
+            this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelOutput.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelOutput.Location = new System.Drawing.Point(280, 18);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(391, 29);
+            this.labelOutput.TabIndex = 21;
+            this.labelOutput.Text = "Нарисуйте цифру квадратами:";
             // 
             // MainForm
             // 
@@ -301,10 +339,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.IdentifideButton);
-            this.Controls.Add(this.TestButton);
+            this.Controls.Add(this.labelOutput);
+            this.Controls.Add(this.testBtn);
+            this.Controls.Add(this.trainBtn);
+            this.Controls.Add(this.recBtn);
+            this.Controls.Add(this.saveTestDataBtn);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.LerningButton);
+            this.Controls.Add(this.saveTrainDataBtn);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -324,6 +365,7 @@
             this.Text = "GPT5";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -344,10 +386,13 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button LerningButton;
+        private System.Windows.Forms.Button saveTrainDataBtn;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button TestButton;
-        private System.Windows.Forms.Button IdentifideButton;
+        private System.Windows.Forms.Button saveTestDataBtn;
+        private System.Windows.Forms.Button recBtn;
+        private System.Windows.Forms.Button trainBtn;
+        private System.Windows.Forms.Button testBtn;
+        private System.Windows.Forms.Label labelOutput;
     }
 }
 

@@ -5,56 +5,82 @@ namespace WindowsFormsApp1.src
 {
     class Neuron
     {
-
-        //поляч
-        private TypeNeuron typeNeuron;
+        //private double a = 1.7159;
+        //private double b = 2 / 3;
+        private double a = 1;
+        private double b = 1;
+        // поля
+        private TypeNeuron type;
         private double[] inputs;
-        private double output;
         private double[] weights;
-        private double derevative;
+        private double derivative;
 
-        //свойства
+        private double output;
 
-        public double[] Inputs { get => inputs; set => inputs = value; }
-        public double[] Weights { get => weights; set => weights = value; }
-        public double Output { get => output; }
-        public double Derevative { get => derevative; }
-
-
-        //constructor
-
-        public Neuron(double[] w, TypeNeuron t)
+        // свойства 
+        public double[] Inputs
         {
-            this.typeNeuron = t;
-            this.weights = w;
+            get { return inputs; }
+            set { inputs = value; }
         }
 
-        private double Lya_Kirily (double arg)
+        public double[] Weights
         {
-            return Math.Max(0.01 * arg, arg);
-        }
-        private double Lya_Kirily_derevator(double arg)
-        {
-            if (arg > 0)
-            return 1;
-            else return 0.01;
+            get { return weights; }
+            set { weights = value; }
         }
 
-        public void Activator(double[] inpt, double[] wght)
+        public double Derivative
         {
-            double sum = wght[0];
-            for (int i = 0; i < inpt.Length; i++) { 
-                sum += inpt[i] * wght[i + 1];
+            get { return derivative; }
+        }
+
+        public double Output
+        {
+            get { return output; }
+        }
+
+        // конструктор
+
+        public Neuron(double[] ws, TypeNeuron t)
+        {
+            type = t;
+            weights = ws;
+        }
+
+        public void Activator()
+        {
+            // первый элемент weights - b (порог)
+            double sum = weights[0];
+            for (int i = 0; i < inputs.Length; i++)
+            {
+                sum += inputs[i] * weights[i + 1];
             }
 
-
-            switch(typeNeuron) {
-                case TypeNeuron.Hidden:output = Lya_Kirily(sum); derevative = Lya_Kirily_derevator(sum); break;
-                case TypeNeuron.Output:output = Exp(sum); break;
-            }  
+            switch (type)
+            {
+                case TypeNeuron.Output:
+                    output = Exp(sum);
+                    break;
+                case TypeNeuron.Hidden:
+                    output = th(sum);
+                    derivative = Derivator(sum);
+                    break;
+                default:
+                    break;
+            }
         }
 
-        
+        // функция активации (гиперболический тангенс)
+        private double th(double x)
+        {
+            return a * Tanh(b * x);
+        }
 
+        // вычисление производной
+        private double Derivator(double x)
+        {
+            return a * b * (1 - Pow(Tanh(b * x), 2));
+        }
     }
 }

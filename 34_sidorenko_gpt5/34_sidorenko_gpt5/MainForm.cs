@@ -8,21 +8,36 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using WindowsFormsApp1.src;
 
 namespace _34_sidorenko_gpt5
 {
-    public partial class MainForm : Form { 
+    public partial class MainForm : Form {
 
-        int[] statusArray = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        double[] inputData;
         int numericValue = 0;  // new variable to hold the numericUpDown value
+        NeuralNetwork net = new NeuralNetwork(NetworkMode.Test);
+
+        public double[] InputData
+        {
+            get { return inputData; }
+            set { inputData = value; }
+        }
+
+
+        double[] NetOutput
+        {
+            set => labelOutput.Text = value.ToList().IndexOf(value.Max()).ToString();
+        }
+
+        //void MassageFunc(string massageText) {
+        //    MessageBox.Show(massageText);
+        //}
 
         public MainForm()
         {
+            InputData = new double[15];
             InitializeComponent();
-        }
-
-        void MassageFunc(string massageText) {
-            MessageBox.Show(massageText);
         }
 
         void ChangeStatusData(Button b, int index)
@@ -30,12 +45,12 @@ namespace _34_sidorenko_gpt5
             if(b.BackColor == Color.Gray)
             {
                 b.BackColor = Color.Gainsboro;
-                statusArray[index] = 0;
+                InputData[index] = 0;
             }
             else 
             {
                 b.BackColor = Color.Gray;
-                statusArray[index] = 1;
+                InputData[index] = 1;
             }
 
         }
@@ -125,29 +140,44 @@ namespace _34_sidorenko_gpt5
             numericValue = Decimal.ToInt32(numericUpDown1.Value);
         }
 
-        private void LerningButton_Click(object sender, EventArgs e)
+        private void saveTrainDataBtn_Click(object sender, EventArgs e)
         {
-            // Convert the statusArray into a comma separated string
-            string output = numericValue + "-" + string.Join(",", statusArray);
-
-            // Append the new array to the end of the file, with a newline
-            // If the file does not exist, this method creates it
-            File.AppendAllText("Lerning.txt", output + Environment.NewLine);
+            string path = AppDomain.CurrentDomain.BaseDirectory + "trainData.txt";
+            string data = numericValue.ToString();
+            foreach (int i in InputData)
+            {
+                data += " " + i.ToString();
+            }
+            data += "\n";
+            File.AppendAllText(path, data);
         }
 
-        private void TestButton_Click(object sender, EventArgs e)
+        private void saveTestDataBtn_Click(object sender, EventArgs e)
         {
-            // Convert the statusArray into a comma separated string
-            string output = numericValue + "-" + string.Join(",", statusArray);
-
-            // Append the new array to the end of the file, with a newline
-            // If the file does not exist, this method creates it
-            File.AppendAllText("Test.txt", output + Environment.NewLine);
+            string path = AppDomain.CurrentDomain.BaseDirectory + "testData.txt";
+            string data = numericValue.ToString();
+            foreach (int i in InputData)
+            {
+                data += " " + i.ToString();
+            }
+            data += "\n";
+            File.AppendAllText(path, data);
         }
 
-        private void IdentifideButton_Click(object sender, EventArgs e)
+        private void recBtn_Click(object sender, EventArgs e)
         {
+            net.ForwardPass(net, InputData);
+            NetOutput = net.Fact;
+        }
 
+        private void trainBtn_Click(object sender, EventArgs e)
+        {
+            net.Train(net);
+        }
+
+        private void testBtn_Click(object sender, EventArgs e)
+        {
+            net.Test(net);
         }
     }
 }
