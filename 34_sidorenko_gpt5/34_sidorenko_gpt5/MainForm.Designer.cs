@@ -60,7 +60,7 @@
             this.button1.CausesValidation = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.SlateGray;
-            this.button1.Location = new System.Drawing.Point(361, 70);
+            this.button1.Location = new System.Drawing.Point(91, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 80);
             this.button1.TabIndex = 0;
@@ -73,7 +73,7 @@
             this.button2.CausesValidation = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.SlateGray;
-            this.button2.Location = new System.Drawing.Point(437, 70);
+            this.button2.Location = new System.Drawing.Point(167, 62);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 80);
             this.button2.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.button3.CausesValidation = false;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.SlateGray;
-            this.button3.Location = new System.Drawing.Point(513, 70);
+            this.button3.Location = new System.Drawing.Point(243, 62);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 80);
             this.button3.TabIndex = 2;
@@ -99,7 +99,7 @@
             this.button4.CausesValidation = false;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.SlateGray;
-            this.button4.Location = new System.Drawing.Point(361, 145);
+            this.button4.Location = new System.Drawing.Point(91, 137);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(80, 80);
             this.button4.TabIndex = 3;
@@ -112,7 +112,7 @@
             this.button5.CausesValidation = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.SlateGray;
-            this.button5.Location = new System.Drawing.Point(437, 145);
+            this.button5.Location = new System.Drawing.Point(167, 137);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 80);
             this.button5.TabIndex = 4;
@@ -125,7 +125,7 @@
             this.button6.CausesValidation = false;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.SlateGray;
-            this.button6.Location = new System.Drawing.Point(513, 145);
+            this.button6.Location = new System.Drawing.Point(243, 137);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(80, 80);
             this.button6.TabIndex = 5;
@@ -138,7 +138,7 @@
             this.button7.CausesValidation = false;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.SlateGray;
-            this.button7.Location = new System.Drawing.Point(361, 222);
+            this.button7.Location = new System.Drawing.Point(91, 214);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(80, 80);
             this.button7.TabIndex = 6;
@@ -151,7 +151,7 @@
             this.button8.CausesValidation = false;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.SlateGray;
-            this.button8.Location = new System.Drawing.Point(437, 222);
+            this.button8.Location = new System.Drawing.Point(167, 214);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 80);
             this.button8.TabIndex = 7;
@@ -164,7 +164,7 @@
             this.button9.CausesValidation = false;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.Color.SlateGray;
-            this.button9.Location = new System.Drawing.Point(513, 222);
+            this.button9.Location = new System.Drawing.Point(243, 214);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 80);
             this.button9.TabIndex = 8;
@@ -177,7 +177,7 @@
             this.button10.CausesValidation = false;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.SlateGray;
-            this.button10.Location = new System.Drawing.Point(361, 298);
+            this.button10.Location = new System.Drawing.Point(91, 290);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(80, 80);
             this.button10.TabIndex = 9;
@@ -190,7 +190,7 @@
             this.button11.CausesValidation = false;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.SlateGray;
-            this.button11.Location = new System.Drawing.Point(437, 298);
+            this.button11.Location = new System.Drawing.Point(167, 290);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(80, 80);
             this.button11.TabIndex = 10;
@@ -203,7 +203,7 @@
             this.button12.CausesValidation = false;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.SlateGray;
-            this.button12.Location = new System.Drawing.Point(513, 298);
+            this.button12.Location = new System.Drawing.Point(243, 290);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(80, 80);
             this.button12.TabIndex = 11;
@@ -216,7 +216,7 @@
             this.button13.CausesValidation = false;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.SlateGray;
-            this.button13.Location = new System.Drawing.Point(361, 374);
+            this.button13.Location = new System.Drawing.Point(91, 366);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(80, 80);
             this.button13.TabIndex = 12;
@@ -229,7 +229,7 @@
             this.button14.CausesValidation = false;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.ForeColor = System.Drawing.Color.SlateGray;
-            this.button14.Location = new System.Drawing.Point(437, 374);
+            this.button14.Location = new System.Drawing.Point(167, 366);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(80, 80);
             this.button14.TabIndex = 13;
@@ -242,7 +242,7 @@
             this.button15.CausesValidation = false;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.ForeColor = System.Drawing.Color.SlateGray;
-            this.button15.Location = new System.Drawing.Point(513, 374);
+            this.button15.Location = new System.Drawing.Point(243, 366);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(80, 80);
             this.button15.TabIndex = 14;
@@ -253,7 +253,7 @@
             // 
             this.saveTrainDataBtn.CausesValidation = false;
             this.saveTrainDataBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.saveTrainDataBtn.Location = new System.Drawing.Point(691, 168);
+            this.saveTrainDataBtn.Location = new System.Drawing.Point(375, 146);
             this.saveTrainDataBtn.Name = "saveTrainDataBtn";
             this.saveTrainDataBtn.Size = new System.Drawing.Size(232, 48);
             this.saveTrainDataBtn.TabIndex = 15;
@@ -263,7 +263,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(691, 130);
+            this.numericUpDown1.Location = new System.Drawing.Point(375, 108);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             9,
             0,
@@ -278,7 +278,7 @@
             // 
             this.saveTestDataBtn.CausesValidation = false;
             this.saveTestDataBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.saveTestDataBtn.Location = new System.Drawing.Point(691, 247);
+            this.saveTestDataBtn.Location = new System.Drawing.Point(375, 225);
             this.saveTestDataBtn.Name = "saveTestDataBtn";
             this.saveTestDataBtn.Size = new System.Drawing.Size(232, 55);
             this.saveTestDataBtn.TabIndex = 17;
@@ -290,7 +290,7 @@
             // 
             this.recBtn.CausesValidation = false;
             this.recBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.recBtn.Location = new System.Drawing.Point(379, 478);
+            this.recBtn.Location = new System.Drawing.Point(109, 470);
             this.recBtn.Name = "recBtn";
             this.recBtn.Size = new System.Drawing.Size(190, 53);
             this.recBtn.TabIndex = 18;
@@ -302,7 +302,7 @@
             // 
             this.trainBtn.CausesValidation = false;
             this.trainBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.trainBtn.Location = new System.Drawing.Point(691, 334);
+            this.trainBtn.Location = new System.Drawing.Point(375, 312);
             this.trainBtn.Name = "trainBtn";
             this.trainBtn.Size = new System.Drawing.Size(232, 35);
             this.trainBtn.TabIndex = 19;
@@ -314,7 +314,7 @@
             // 
             this.testBtn.CausesValidation = false;
             this.testBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.testBtn.Location = new System.Drawing.Point(691, 396);
+            this.testBtn.Location = new System.Drawing.Point(375, 374);
             this.testBtn.Name = "testBtn";
             this.testBtn.Size = new System.Drawing.Size(232, 35);
             this.testBtn.TabIndex = 20;
@@ -327,7 +327,7 @@
             this.labelOutput.AutoSize = true;
             this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelOutput.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelOutput.Location = new System.Drawing.Point(280, 18);
+            this.labelOutput.Location = new System.Drawing.Point(10, 10);
             this.labelOutput.Name = "labelOutput";
             this.labelOutput.Size = new System.Drawing.Size(391, 29);
             this.labelOutput.TabIndex = 21;
@@ -338,7 +338,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(665, 559);
             this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.testBtn);
             this.Controls.Add(this.trainBtn);

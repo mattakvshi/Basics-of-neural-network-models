@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using WindowsFormsApp1.src;
+using _34_sidorenko_gpt5.src;
 
 namespace _34_sidorenko_gpt5
 {

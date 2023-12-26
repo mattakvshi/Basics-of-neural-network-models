@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
 
-namespace WindowsFormsApp1.src
+namespace _34_sidorenko_gpt5.src
 {
     class NeuralNetwork
     {

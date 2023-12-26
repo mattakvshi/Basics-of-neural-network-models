@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace WindowsFormsApp1.src
+namespace _34_sidorenko_gpt5.src
 {
     class InputLayer
     {

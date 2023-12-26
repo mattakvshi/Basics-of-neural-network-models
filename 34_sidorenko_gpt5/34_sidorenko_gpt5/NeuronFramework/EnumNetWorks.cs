@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp1.src
+namespace _34_sidorenko_gpt5.src
 {
     enum TypeNeuron  // тип нейрона
     { 
