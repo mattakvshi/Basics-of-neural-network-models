@@ -11,7 +11,7 @@ namespace _34_sidorenko_gpt5.src
         string pathFileWeights; // путь к файлу весов
         protected int numOfNeurons; // число нейронов
         protected int numOfPrevNeurons; // число нейронов на пред слое
-        protected const double learningRate = 0.5; // скорость обучения
+        protected const double learningRate = 0.05; // скорость обучения
         protected const double momentum = 0.05; // настройка метода оптимизации
         protected double[,] lastDeltaWeights; // последнее изменение весов
         private Neuron[] neurons;

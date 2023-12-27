@@ -16,7 +16,7 @@ namespace _34_sidorenko_gpt5
 
         double[] inputData;
         int numericValue = 0;  // new variable to hold the numericUpDown value
-        NeuralNetwork net = new NeuralNetwork(NetworkMode.Test);
+        NeuralNetwork net = new NeuralNetwork(NetworkMode.Recognize);
 
         public double[] InputData
         {

@@ -108,7 +108,7 @@ namespace _34_sidorenko_gpt5.src
                 form.Show();
             }
 
-            int epochs = 200;
+            int epochs = 80;
             net.input_layer = new InputLayer(NetworkMode.Train);
 
             double tmpSumError; // Временная переменная суммы ошибок
